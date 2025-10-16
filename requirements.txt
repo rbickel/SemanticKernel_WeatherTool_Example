@@ -1,0 +1,4 @@
+semantic-kernel
+openapi-schema-pydantic
+rich
+python-dotenv
