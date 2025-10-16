@@ -1,33 +1,26 @@
 # Semantic Kernel Azure OpenAI Chat
 
-This project is a Python console application using Semantic Kernel to chat with an Azure OpenAI GPT-5 Codex model. It integrates an OpenAPI spec as a tool for the model. The system prompt is stored in `system_prompt.md` for easy editing.
+This project is a Python console application using Semantic Kernel to chat with an Azure OpenAI GPT-5 model. It integrates an OpenAPI spec as a tool for the model. The system prompt is stored in `system_prompt.md` for easy editing.
 
 ## Features
 
-- Console chat with Azure OpenAI GPT-5 Codex
+- Console chat with Azure OpenAI GPT-5
 - OpenAPI tool integration via `weather_openapi.json`
 - Editable system prompt
 
 ## Setup
 
-1. Create and activate a virtual environment (recommended):
+1. Install dependencies:
 
-   ```pwsh
-   python -m venv .venv
-   .\.venv\Scripts\Activate.ps1
-   ```
-
-2. Install dependencies:
-
-   ```pwsh
+   ```bash
    pip install -r requirements.txt
    ```
 
-3. Set your Azure OpenAI endpoint and key in environment variables or a `.env` file:
+2. Rename or copy `.env.sample` to `.env`, then edit the file and fill in your actual Azure OpenAI credentials. The application expects:
 
    - `AZURE_OPENAI_ENDPOINT`
    - `AZURE_OPENAI_KEY`
-   - `AZURE_OPENAI_DEPLOYMENT` (GPT-5 Codex deployment name)
+   - `AZURE_OPENAI_DEPLOYMENT`
 
 ## Usage
 
